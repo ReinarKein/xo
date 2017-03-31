@@ -148,7 +148,7 @@ class XO extends RenderEl {
     return (new Array(_size)).fill(null).every(function (_null, i) {
       let x = _size - i - 1;
 
-      return  rows[i].children[i].textContent === winner ||
+      return  rows[i].children[x].textContent === winner ||
               rows[x].children[x].textContent === winner;
     }) && winner;
   }
